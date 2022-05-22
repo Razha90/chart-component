@@ -1,0 +1,158 @@
+:root {
+    --Softred: hsl(10, 79%, 65%);
+--Cyan: hsl(186, 34%, 60%);
+--Dark-brown: hsl(25, 47%, 15%);
+--Mediumbrown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Verypaleorange: hsl(33, 100%, 98%);
+--FontStyle :'DM Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--Cream);
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.wrapper {
+    width: 450px;
+    margin: 100px auto 0 auto;
+}
+
+.wrap-h {
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--Softred);
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.balance {
+    color: var(--Verypaleorange);
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.money-h {
+    margin-top: 5px;
+    font-size: 30px;
+    color: var(--Verypaleorange);
+}
+
+.wrap-m {
+    background-color: var(--Verypaleorange);
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.spending {
+    color: var(--Dark-brown);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.wrap-chart {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 20px;
+    gap: 2px;
+}
+
+.wrap-chart-1 {
+    flex: 100px;
+}
+
+.chart-mon {
+    height: 45px;
+}
+
+.chart-tue {
+    height: 90px;
+}
+
+.chart-wed {
+    height: 150px;
+    background-color: var(--Cyan) !important;
+}
+
+.chart-thu {
+    height: 80px;
+}
+
+.chart-fri {
+    height: 60px;
+}
+
+.chart-sat {
+    height: 110px;
+}
+
+.chart-sun {
+    height: 70px;
+}
+
+.chart {
+    width: 80%;
+    background-color: var(--Softred);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.chart:hover {
+    opacity: 0.5;
+}
+
+
+.ruler {width: 100%; margin-top: 8px;}
+.c-font {
+    color: var(--Mediumbrown);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.value {
+    background-color: var(--Verypaleorange);
+    color: var(--Verypaleorange);
+    padding: 7px;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+
+.line {
+    border-top: 1px solid var(--Mediumbrown);
+    width: 100%;
+    background-color: var(--Mediumbrown);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 0.5;
+}
+
+.wrap-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-b {
+    color: var(--Mediumbrown);
+}
+
+.price {
+    font-weight: 700;
+    color: var(--Dark-brown);
+    font-size: 40px;
+}
+

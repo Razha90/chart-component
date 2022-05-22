@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Chart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    .kamu {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .saya:hover {opacity: 0.5;}
+    .kamu:hover + .aku{background-color: green;}
+    .aku {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    .tot {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+
+    .value-mon:hover + .chart-mon{background-color: blue;}
+</style>
+<body>  
+    <div class="wrapper">
+        <div class="wrap-h">
+            <div>
+                <div class="balance">My balance</div>
+                <div class="money-h">$921.48</div>
+            </div>
+            <div><img src="./images/logo.svg" alt="logo"></div>
+        </div>
+        <div class="wrap-m">
+            <div class="spending">Spending - Last 7 days</div>
+            
+            <div class="wrap-chart">
+                <div class="wrap-chart-1">
+                    <div class="value value-mon">$15.56</div>
+                    <div class="ruler ruler-mon"><div class="chart-mon chart" onmouseover="onMon()" onmouseout="clMon()"></div></div>
+                    <div class="c-font">mon</div>
+                </div>
+                <div class="wrap-chart-1">
+                    <div class="value">$32.08</div>
+                    <div class="ruler"><div class="chart-tue chart" onmouseover="onTue()" onmouseout="clTue()"></div></div>
+                    <div class="c-font">tue</div>
+                </div>
+                <div class="wrap-chart-1">
+                    <div class="value wed">$52.36</div>
+                    <div class="ruler"><div class="chart chart-wed" onmouseover="clWed()" onmouseout="onWed()"></div></div>
+                    <div class="c-font">wed</div>
+                </div>
+                <div class="wrap-chart-1">
+                    <div class="value">$31.07</div>
+                    <div class="ruler"><div class="chart chart-thu" onmouseover="onThu()" onmouseout="clThu()"></div></div>
+                    <div class="c-font">thu</div>
+                </div>
+                <div class="wrap-chart-1">
+                    <div class="value">$18.04</div>
+                    <div class="ruler"><div class="chart chart-fri" onmouseover="onFri()" onmouseout="clFri()"></div></div>
+                    <div class="c-font">fri</div>
+                </div>
+                <div class="wrap-chart-1">
+                    <div class="value">$46.33</div>
+                    <div class="ruler"><div class="chart chart-sat" onmouseover="onSat()" onmouseout="clSat()"></div></div>
+                    <div class="c-font">sat</div>
+                </div>
+                <div class="wrap-chart-1">
+                    <div class="value">$20.65</div>
+                    <div class="ruler"><div class="chart chart-sun" onmouseover="onSun()" onmouseout="clSun()"></div></div>
+                    <div class="c-font">sun</div>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div class="wrap-bottom">
+                <div>
+                    <div class="nav-b">Total this month</div>
+                    <div class="price">$478.33</div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-weight: 700; color: hsl(25, 47%, 15%);">+2.4%</div>
+                    <div class="nav-b">from last month</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="wrapper" style="text-align: center;">
+        If you want to Help me Go to my <a href="https://github.com/Razha90/chart-component.git">GitHub</a>
+    </div>
+    <h1>Some on can explained me why hover like this</h1>
+    <div class="kamu saya"></div>
+    <div class="aku"></div>
+    <div class="saya tot"></div>
+    <br><br>
+    <div class="kamu saya"></div>
+    <div class="saya tot"></div>
+    <div class="aku"></div>
+</body>
+<script src="script.js"></script>
+</html>
